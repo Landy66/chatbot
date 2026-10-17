@@ -1,0 +1,33 @@
+# Python & Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution & Build
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Environment Variables & Secrets
+.env
+*.env.local
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Tooling Caches
+.ruff_cache/
+.mypy_cache/
+
+# IDE & OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

@@ -1,0 +1,28 @@
+---
+alwaysApply: false
+---
+# Pydantic AI Documentation
+
+Official documentation:
+https://pydantic.dev/docs/ai/llms-full.txt
+
+Local documentation:
+@docs/pydantic-ai-llms-full.txt
+
+## Instructions
+- When working with Pydantic AI, consult the
+  relevant sections of the local documentation.
+- Search for relevant APIs and examples instead
+  of loading the entire documentation.
+- Prefer local documentation; check the official
+  website when current information is needed.
+- Verify compatibility with the installed
+  pydantic-ai version.
+- Never invent APIs, imports or parameters.
+- Avoid deprecated APIs when alternatives exist.
+- Follow documented patterns for agents, tools,
+  dependencies, structured outputs and models.
+- Never hardcode API keys or credentials.
+- Explain missing or outdated documentation.
+- Summarize implementation decisions in German.
+  

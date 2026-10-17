@@ -1,0 +1,16 @@
+---
+description: Projektweite Vorgaben für den Chatbot
+alwaysApply: true
+---
+
+# Projektregeln
+
+## Python
+
+- Verwende **Python 3.14.8**.
+- Keine Features oder Syntax, die eine andere Version voraussetzen.
+- Neue virtuelle Umgebungen und Tooling (venv, pip, Tests) immer gegen 3.14.8 ausrichten.
+
+## PRD
+
+- Aktuallisiere das Dokument PRD.md fortlaufend bei Änderungen.

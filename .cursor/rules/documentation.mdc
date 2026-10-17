@@ -1,0 +1,91 @@
+---
+alwaysApply: true
+---
+
+---
+description: Python documentation, version compatibility, APIs, code quality and testing
+alwaysApply: true
+---
+
+# Python Development & Documentation Rules
+
+## Language
+- Communicate with the user in German.
+- Write code identifiers in English.
+- Follow the existing project's conventions.
+
+## Documentation sources
+Prefer official, version-appropriate documentation:
+
+- Python: https://docs.python.org/3/
+- Standard Library: https://docs.python.org/3/library/
+- Language Reference: https://docs.python.org/3/reference/
+- Python What's New: https://docs.python.org/3/whatsnew/
+- Python Deprecations: https://docs.python.org/3/deprecations/
+- Typing: https://typing.python.org/
+- Python Packaging: https://packaging.python.org/
+- Python PEPs: https://peps.python.org/
+- pip: https://pip.pypa.io/en/stable/
+- pytest: https://docs.pytest.org/en/stable/
+- Ruff: https://docs.astral.sh/ruff/
+
+## Version compatibility
+- Inspect pyproject.toml, .python-version, requirements files and the active interpreter.
+- Determine the project's supported Python versions before choosing APIs.
+- Never assume that the newest Python version is installed or supported.
+- Prefer documentation for the actual target Python version.
+- Do not introduce syntax or APIs unsupported by the target version.
+- Check deprecations and migration notes when relevant.
+
+## Documentation workflow
+- Consult official documentation when APIs, compatibility, behavior or security details are uncertain.
+- Use available browsing or documentation tools when needed.
+- URLs in this rule are references, not pre-indexed documentation.
+- Do not claim to have checked a webpage unless it was actually accessed.
+- If documentation cannot be accessed, disclose that limitation.
+- Never invent API methods, parameters or version support.
+- Prefer installed package metadata and source code when verifying third-party APIs.
+
+## Code quality
+- Follow PEP 8 and existing repository conventions.
+- Use clear names, small functions and maintainable modules.
+- Prefer pathlib for new filesystem code where appropriate.
+- Use type hints for new or significantly modified public functions.
+- Prefer modern typing syntax only when supported by the target Python version.
+- Use specific exceptions and meaningful error messages.
+- Use logging instead of print for application diagnostics.
+- Never hardcode secrets, passwords or API keys.
+- Avoid unnecessary dependencies and unrelated refactoring.
+- Preserve existing public interfaces unless changes are requested.
+
+## Dependencies and environments
+- Respect the existing package manager and lockfiles.
+- Prefer the existing virtual environment.
+- For new simple projects, use python -m venv .venv unless another tool is specified.
+- Do not install or upgrade packages without a task-related reason.
+- Verify dependency versions and compatibility before proposing upgrades.
+- Never commit .venv, secrets or generated caches.
+
+## Testing and validation
+- Follow the repository's existing test framework.
+- Prefer pytest for new projects when no test framework is defined.
+- Add or update tests for meaningful behavioral changes.
+- Include edge cases and relevant failure scenarios.
+- Run relevant tests and lint checks when tools are available.
+- Never claim tests passed unless they were executed successfully.
+- Report unverified assumptions and remaining issues.
+
+## Cursor Agent workflow
+1. Inspect relevant project files and configuration.
+2. Determine Python and dependency versions.
+3. Consult official documentation when needed.
+4. Make minimal, targeted changes.
+5. Validate changes with available tools.
+6. Summarize changes, checks and remaining risks in German.
+
+## Priorities
+1. Correctness and security
+2. Compatibility with the project's Python version
+3. Existing project conventions
+4. Maintainability and readability
+5. Performance when relevant
